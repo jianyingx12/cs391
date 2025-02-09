@@ -1,0 +1,271 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E0FFFF;
+    font-size: calc(14px + 0.5vw);
+}
+
+/* Wrapper for each page */
+#cert-page-wrapper, #emp-page-wrapper, #edu-page-wrapper, 
+#ref-page-wrapper, #pro-page-wrapper, #index-page-wrapper {
+    margin: auto;
+    max-width: 1000px;
+    padding: 0px;
+    background-color: white;
+}
+
+/* IMG */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: gray; 
+}
+
+#edu-container-main, #pro-ref, #per-ref, #cert-container-main {
+    line-height: 30px;
+}
+
+/* Main Content */
+main {
+    min-height: 100vh;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Header */
+header {
+    background-color: #1E3A5F;
+    color: white;
+    padding: 5px;
+    margin-top: -15px;
+}
+
+/* table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #1E3A5F;
+    color: white;
+}
+
+/* Certifications boxes */
+#cert-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cert-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 33%;
+    border-radius: 8px;
+}
+
+#job-1, #job-2, #job-3, #job-4 {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+#project-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    line-height: 30px;
+}
+
+/* Calculator */
+#calculator {
+    background-color: lightblue; 
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+@media (max-width: 750px) {
+    /* For screens smaller than 750-px: the content should be aligned center */
+    header {
+        text-align: center;
+    }
+
+    /* For screens smaller than 750-px: should occupy 100% of the width of its parent and appear horizontal.*/
+    nav {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        text-align: center;
+        padding: 15px;
+    }
+
+    #about-me, #index-main-img, #index-main-text, #key-skills, #education-main,
+    #cert-h2, #pro-ref-h2, #per-ref-h2 {
+        text-align: center;
+    }
+
+    footer {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+    }
+
+    /* Calc */
+    #calculator {
+        background-color: azure;
+        margin: auto;
+        padding: 25px;
+        text-align: center;
+    }
+}
+
+/* For screens bigger than 750-px: the content should be aligned left */
+@media (min-width: 750px) {
+    #index-container, #cert-container, #emp-container, #edu-container, 
+    #ref-container, #pro-container {
+        display: flex;
+    }
+
+    header {
+        text-align: left;
+        width: 100%;
+    }
+
+    nav {
+        width: 30%;
+        height: auto;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    main {
+        width: 70%;
+        margin: 0;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* For screens smaller than 750-px: the content should be aligned center */
+@media (max-width: 750px) {
+    header {
+        text-align: center;
+    }
+
+    nav {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: calc(12px + 0.5vw);
+        text-align: center;
+        padding: 15px;
+    }
+
+    #about-me, #index-main-img, #index-main-text {
+        text-align: center;
+    }
+
+    footer {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+    }
+}
+
+/* Width over 1000 */
+@media (min-width: 1000px) {
+    main {
+        max-width: 70%;
+        margin: auto;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1E3A5F;;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+}
+
+/* Link in footer */
+footer a {
+    color: #00f;
+    text-decoration: underline;
+}

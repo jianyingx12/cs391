@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title id="pro-title"> Projects | Resume </title>
+    </header>
+
+    <body>
+        <div id="pro-page-wrapper">
+
+            <!-- Header section -->
+            <header id="pro-head">
+                <h1 id="pro-head-h1"> Jianying Liu </h1>
+                <p id="pro-head-p"> Welcome to my online resume </p>
+            </header>
+
+            <div id="pro-container">
+                <!-- Navigation menu -->
+                <nav id="pro-nav-container">
+                    <ul id="pro-nav-ul">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="employment.html">Employment</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="references.html">References</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Main content -->
+                <main id="pro-main-container">
+                    
+                    <div id="calculator">
+                        <h2 id="calc-h2">Calculator</h2>
+                        
+                        <label id="first">First number:</label><input id="firstnum">
+                        <br><br>
+                        <label id="second">Second number:</label><input id="secondnum">
+                        <br><br>
+
+                        <button id="add" onclick="myAdd()">+</button>
+
+                        <button id="sub" onclick="mySub()">-</button>
+
+                        <button id="mul" onclick="myMul()">*</button>
+
+                        <button id="div" onclick="myDiv()">/</button>
+
+                        <button id="pow" onclick="myPow()">^</button>
+
+                        <button id="mod" onclick="myMod()">%</button>
+
+                        <button id="clear" onclick="clearCalc()">Clear</button>
+
+                        <div id="output"></div>
+
+                        <script src="calc.js"></script>
+                    </div>
+
+                    <div id="project-item">
+                        <h3>Racist Deed Detection Project</h3>
+                        <p>This project focused on processing thousands of historical deeds to detect and analyze 
+                            racially restrictive covenants. Using OCR, keyword detection, and machine learning techniques, 
+                            we identified potential racism in these deeds by extracting and analyzing relevant text.</p>
+                        <ul>
+                            <li><strong>Duration:</strong> September 2024 - December 2024</li>
+                            <li><strong>Technologies:</strong> OCR, Python, NLP, Logistic Regression, BERT</li>
+                            <li><strong>Features:</strong> Extracted location information, detected keywords indicating racial restrictions, and outputted results to structured reports.</li>
+                            <li><strong>Impact:</strong> Improved access to historical records for public awareness and research on racial housing restrictions.</li>
+                        </ul>
+                    </div>
+
+                </main>
+            </div>
+
+            <!-- Footer Section -->
+            <footer id="foot">
+                <p> All Rights Reserved By Jianying Liu | <a href="#">Credits</a> &copy;</p>
+            </footer>
+        </div>
+    </body>
+</html>
